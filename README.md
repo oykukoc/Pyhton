@@ -1,2 +1,2 @@
 # Pyhton
-Here you can find the whole Pyhton course fpr free --> https://youtu.be/ix9cRaBkVe0?si=thvZDe7hGeNU7SbN
+Im trying to learn Pyhton at this repository :) if you wanna find the video, which im following step by step while coding, here you can find the whole Pyhton course for free --> https://youtu.be/ix9cRaBkVe0?si=thvZDe7hGeNU7SbN
