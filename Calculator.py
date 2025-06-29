@@ -1,5 +1,4 @@
 #Python Calculator
-
 operator = input("Enter an operator (+ - * /): ")
 while operator not in ["+","-","*","/"]:
     print(f"{operator} is not valid, please enter a valid operator! ")
@@ -28,5 +27,8 @@ elif operator == "*":
                 result = num1 * num2
                 print(result)
 elif operator == "/":
-                result = num1 / num2
-                print(result)
+    if num2 == 0:
+        print("Error! a number can not be divided to zero")
+    else:
+        result = num1 / num2
+        print(result)
