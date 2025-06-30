@@ -13,3 +13,7 @@ print(maxNum)
 age= int(input("Enter your age: "))
 staus = "Adult" if age >= 18 else "Child"
 print(staus)
+
+userRole = input("Enter the access type: ")
+accessLevel = "Full Access" if userRole == "admin" else "Limited Access"
+print(accessLevel)
