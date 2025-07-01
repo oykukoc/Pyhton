@@ -14,5 +14,3 @@ for x in range(1,21):
         continue
     else:
         print(x)
-
-
