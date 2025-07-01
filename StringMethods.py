@@ -1,6 +1,6 @@
 
 # name = input("Enter your full name: ")
-phoneNumber = input("Enter your phone number: ")
+# phoneNumber = input("Enter your phone number: ")
 
 # it does count the spaces too.
 # result = len(name)
@@ -30,6 +30,17 @@ phoneNumber = input("Enter your phone number: ")
 # result = phoneNumber.count(" ")
 
 #it replaces the characters with the given char
-result = phoneNumber.replace(" ","-")
+# result = phoneNumber.replace(" ","-")
 
-print(result)
+# validate user input exercise
+# 1. username is no more than 12 characters
+# 2. username must not contain spaces
+# 3. username must not contain digits
+
+username = input("Please enter a username: ")
+
+while len(username) > 12 or any(char.isdigit() for char in username) or username.count(" ") != 0:
+    print("Its not valid, try again!")
+    username = input("Please enter a username again: ")
+
+print("Its a valid username!")
