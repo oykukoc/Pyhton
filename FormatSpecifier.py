@@ -10,5 +10,3 @@ print(f"Price 3 is {price3:.1f}")
 
 # it has 10 spaces to display the output "^ means center" "< means to the left"
 print(f"Price 3 is {price3:^10}")
-
-
