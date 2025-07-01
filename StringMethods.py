@@ -43,4 +43,4 @@ while len(username) > 12 or any(char.isdigit() for char in username) or username
     print("Its not valid, try again!")
     username = input("Please enter a username again: ")
 
-print("Its a valid username!")
+print(f"Welcome {username}!")
