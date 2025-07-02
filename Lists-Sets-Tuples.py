@@ -64,3 +64,5 @@ print(fruits.count("coconut")) #2
 
 for fruit in fruits:
     print(fruits)
+
+
