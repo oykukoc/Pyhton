@@ -2,8 +2,7 @@ import socket
 import threading
 
 client_socket = socket.socket()
-client_socket.connect(("134.102.157.151", 5000))
-
+client_socket.connect(("134.102.157.151", 5050))  # Sunucunun IP'sini buraya yaz
 
 def receive():
     while True:
@@ -15,20 +14,18 @@ def receive():
             client_socket.close()
             break
 
-
 def send():
     while True:
-        message = input()
+        message = input("")
         client_socket.send(message.encode())
         if message == "exit":
             client_socket.close()
+            break
 
-
-# dinleme threadi
-
+# dinleme thread'i
 thread = threading.Thread(target=receive)
 thread.start()
 
-# yazma threadi
+# yazma thread'i
 thread2 = threading.Thread(target=send)
 thread2.start()
